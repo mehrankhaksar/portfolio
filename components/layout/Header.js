@@ -41,7 +41,7 @@ function Header() {
           </a>
           <a
             className="header-social-media"
-            href="#"
+            href="https://www.linkedin.com/in/mehran-khaksar-934199290/"
             target="_blank"
             rel="noreferrer"
           >
@@ -59,7 +59,7 @@ function Header() {
         <div className="grid grid-cols-3 gap-5">
           <a
             className="col-span-2 flex justify-center items-center text-lg font-semibold text-white bg-blue-500 py-3 rounded shadow-md shadow-blue-500 transition-colors hover:bg-blue-600"
-            href="/assets/pdf/Mehran Khaksar.pdf"
+            href="/assets/pdf/Mehran Khaksar Portfolio.pdf"
             download
           >
             Download CV
