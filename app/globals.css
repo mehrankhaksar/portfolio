@@ -1,27 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  li {
+    list-style: none;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .header-social-media {
+    @apply text-2xl transition-colors hover:text-blue-500;
+  }
+
+  .header-contact-btn {
+    @apply text-2xl bg-gray-300 p-2.5 rounded-full transition-colors hover:bg-gray-400;
+  }
+
+  .skill {
+    @apply flex space-x-2.5 text-2xl text-blue-500;
+  }
+
+  .skill div {
+    @apply text-lg font-bold text-black;
+  }
+
+  .skill div > span {
+    @apply text-sm font-semibold;
+  }
 }
